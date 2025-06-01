@@ -14,7 +14,9 @@ class _TodoScreenState extends State<TodoScreen> {
   @override
   Widget build(BuildContext context) => BlocConsumer<TodoBloc, TodoState>(
     bloc: _todoBloc..add(TodoEvent.fetch(name: 'TodoEvent.fetch()')),
+
     listener: _todoBlocListener,
+    buildWhen: (previous, current) => !current.isProcessing,
     builder: (context, state) {
       return Scaffold(
         body: Center(
