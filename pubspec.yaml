@@ -1,7 +1,8 @@
 name: matching_state
 description: "A new Flutter package project."
 version: 0.0.1
-# homepage:
+homepage: https://www.youtube.com/watch?v=4hVzax0Qm94
+repository: https://github.com/vektemok/Matching-State.git
 
 environment:
   sdk: ^3.7.0
